@@ -249,7 +249,7 @@ def render_header():
     snap = latest_snapshot()
     logo_cols = st.columns([1, 3, 1])
     with logo_cols[0]:
-        st.image("AEROBOND-logo_tagline-AV-DEF-SP_RGB-2.jpg", width=220)
+        st.image("AEROBOND-logo_tagline-AV-DEF-SP_RGB-2.png", width=220)
     with logo_cols[1]:
         st.markdown(
             f"""
@@ -434,7 +434,7 @@ def admin_page():
 def main():
     init_state()
     with st.sidebar:
-        st.image("AEROBOND-logo_tagline-AV-DEF-SP_RGB-2.jpg", use_container_width=True)
+        st.image("AEROBOND-logo_tagline-AV-DEF-SP_RGB-2.png", use_container_width=True)
         st.markdown("### Aerobond Dashboard")
         if not st.session_state.auth:
             check_password()
